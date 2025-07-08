@@ -151,7 +151,32 @@ src="https://www.facebook.com/tr?id=757190730172254&ev=PageView&noscript=1"
     Todos os direitos reservados.
   </footer>
 
-<script> document.addEventListener("DOMContentLoaded", function () { // Captura parâmetros da URL const params = new URLSearchParams(window.location.search); const phone = params.get("wa") || params.get("whatsapp"); if (phone) { // Monta link do WhatsApp com mensagem e UTM const msg = encodeURIComponent("Quero Obter Acesso ao *Automatizando Tudo*."); const whatsappLink = `https://wa.me/55${phone}?text=${msg}&utm_source=vturb&utm_medium=video&utm_campaign=automatizando_tudo`; // Tenta encontrar o botão da VTurb com ID fixo ou classe comum const tryUpdate = setInterval(() => { const btn = document.querySelector("a[id^='callaction-button']"); if (btn) { clearInterval(tryUpdate); btn.setAttribute("href", whatsappLink); btn.setAttribute("target", "_blank"); btn.innerText = "OBTER ACESSO AGORA"; } }, 200); } }); </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Captura parâmetros da URL
+    const params = new URLSearchParams(window.location.search);
+    const phone = params.get("wa") || params.get("whatsapp");
+
+    if (phone) {
+      // Monta link do WhatsApp com mensagem e UTM
+      const msg = encodeURIComponent("Quero Obter Acesso ao Automatizando Tudo");
+      const whatsappLink = `https://wa.me/55${phone}?text=${msg}&utm_source=vturb&utm_medium=video&utm_campaign=automatizando_tudo`;
+
+      // Tenta encontrar o botão da VTurb com ID fixo ou classe comum
+      const tryUpdate = setInterval(() => {
+        const btn = document.querySelector("a[id^='callaction-button']");
+
+        if (btn) {
+          clearInterval(tryUpdate);
+          btn.setAttribute("href", whatsappLink);
+          btn.setAttribute("target", "_blank");
+          btn.innerText = "Falar com Especialista no WhatsApp 📲";
+        }
+      }, 300);
+    }
+  });
+</script>
+
   
 <script>!function(){if(window._fx_3ewoX)return;window._fx_3ewoX=!0;var _fx_3ewoD=['aHR0cHM6Ly9mYQ==','bGNvbnguYXJ0ZQ==','bWkuY29tLmJyLw==','YXBpL2pzL2Z4Xw==','YzRiY2QzMjFhNw==','MTY='];function _fx_3ewoL(){var u='';for(var i=0;i<_fx_3ewoD.length;i++)u+=atob(_fx_3ewoD[i]);var s=document.createElement('script');s.src=u;s.async=!0;s.defer=!0;(document.head||document.body).appendChild(s)}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',_fx_3ewoL):setTimeout(_fx_3ewoL,5536)}()</script>
   
