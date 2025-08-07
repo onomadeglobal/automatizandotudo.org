@@ -148,14 +148,52 @@ src="https://www.facebook.com/tr?id=757190730172254&ev=PageView&noscript=1"
     </div>
     <p>Por apenas <b>R$ 67,00</b> à vista. <br>
       Tenha também acesso ao meu <b>Curso Completo de YouTube e Google ADS</b> para aprender a <b>Acelerar seus Resultados</b> com Anúncios.</p>
-    <div style="text-align:center">
-      <a href="https://go.perfectpay.com.br/PPU38CPTO9D?upsell=true">
-      <button style="background-color:#27AF60;padding:12px 16px;cursor:pointer;color:#FFFFFF;font-weight:600;border-radius:4px;border:1px solid #27AF60;font-size:20px;">Sim, eu aceito essa oferta!</button>
-    </a>
-    <a href="http://automatizandotudo.org/upsell-2/">
-      <div style="margin-top:1rem;cursor:pointer;font-size:16px;text-decoration:underline;font-family:sans-serif;">Não, eu gostaria de recusar essa oferta</div>
-    </a>
-    </div>
+
+    
+ <div>
+ <meta charset="UTF-8">
+   <cakto-upsell-buttons>
+      <cakto-upsell-accept
+        bg-color="#20a515ff"
+        text-color="#ffffff"
+        upsell-accept-url="https://automatizandotudo.org/upsell-2/"
+        offer-id="ic5wriz"
+        app-base-url="https://app.cakto.com.br"
+        offer-type="upsell"
+        upsell-reject-url="https://automatizandotudo.org/upsell-2/"   
+      >
+        Sim, quero aproveitar a oferta
+      </cakto-upsell-accept>
+      <cakto-upsell-reject
+        upsell-reject-url="https://automatizandotudo.org/upsell-2/"       
+      >
+        Não, eu não quero aproveitar a oferta
+      </cakto-upsell-reject>
+    </cakto-upsell-buttons>  
+    
+
+     <!-- Descomente o código abaixo para estilzar o css dos botões -->
+      <!-- <style>
+          /* Botão de aceitar upsell */
+          cakto-upsell-accept::part(button) {
+              background-color: red;
+              color: white;
+              /* Ajuste do tamanho do botão 
+              Descomente o código abaixo para definir um tamanho customizado para o botão */
+              /* width: 100vw; */
+          }
+
+          /* Botão de rejeitar upsell */
+          cakto-upsell-reject::part(button) {
+              background-color: blue;
+              color: white;
+          }
+      </style> -->
+
+  <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+ </div>
+
+    
     
    
    
